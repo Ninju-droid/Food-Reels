@@ -1,6 +1,6 @@
-# ZomoReels Premium - MERN Food Discovery
+# Food Reels Premium - MERN Food Discovery
 
-ZomoReels is a professional-grade MERN platform where food vendors upload immersive short-preparation videos (reels), allowing users to verify food quality and kitchen hygiene before placing real-time orders.
+Food Reels is a professional-grade MERN platform where food vendors upload immersive short-preparation videos (reels), allowing users to verify food quality and kitchen hygiene before placing real-time orders.
 
 ## 💎 Features
 
