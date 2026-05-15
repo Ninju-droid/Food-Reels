@@ -31,31 +31,32 @@ ZomoReels is a professional-grade MERN platform where food vendors upload immers
 │   │   ├── middlewares     # Auth and error handling
 │   │   ├── models          # Mongoose schemas
 │   │   ├── routes          # API endpoints
-│   │   └── services        # Business logic layers
+│   │   └── services        # Business logic layers (Storage, etc.)
+│   ├── .env.example        # Backend environment template
 │   ├── server.js           # Server entry point
 │   └── package.json
 ├── frontend
 │   ├── src
-│   │   ├── components/ui    # Atomic UI components (Button, Input, Modal)
+│   │   ├── components/ui    # Atomic UI components
 │   │   ├── features/        # Modular domain logic
-│   │   │   ├── auth/        # Auth forms and logic
-│   │   │   ├── feed/        # Reels and feed components
-│   │   │   ├── orders/      # Order processing and history
-│   │   │   └── partner/     # Vendor-specific dashboards
-│   │   ├── hooks/           # Custom React hooks (useAuth, useFeed, useOrders)
-│   │   ├── layouts/         # App shell, Sidebar, Topbar
-│   │   ├── lib/             # API client and helper functions
-│   │   ├── styles/          # Premium design system tokens
-│   │   ├── App.jsx          # Root application component
+│   │   ├── hooks/           # Custom React hooks
+│   │   ├── layouts/         # App shell layouts
+│   │   ├── lib/             # API client and helpers
+│   │   ├── styles/          # Design system tokens
+│   │   ├── App.jsx          # Root component
 │   │   └── main.jsx
+│   ├── .env.example        # Frontend environment template
 │   └── package.json
+├── .gitignore              # Root git ignore
 └── README.md
 ```
 
 ## 🛠️ Setup & Installation
 
 ### 1. Environment Configuration
-Create `backend/.env`:
+
+#### Backend Configuration
+Create `backend/.env` using `backend/.env.example` as a template:
 ```env
 PORT=3000
 CLIENT_URL=http://localhost:5173
@@ -64,6 +65,12 @@ JWT_SECRET=your_jwt_secret
 IMAGEKIT_PRIVATE_KEY=your_private_key
 IMAGEKIT_PUBLIC_KEY=your_public_key
 IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_id
+```
+
+#### Frontend Configuration
+Create `frontend/.env` using `frontend/.env.example` as a template:
+```env
+VITE_API_URL=http://localhost:3000/api
 ```
 
 ### 2. Backend Installation
@@ -99,6 +106,10 @@ npm run dev
 - `PATCH /api/orders/:id/status` - Update order status
 
 ## 🛡️ Notes
-- **Security**: Auth utilizes secure HTTP-only cookies.
+- **Security**: Auth utilizes secure HTTP-only cookies. No sensitive credentials are hardcoded in the source.
+- **Environment**: Ensure all `.env` files are correctly configured before starting the servers.
 - **Performance**: Reels are lazy-loaded and optimized via ImageKit.
 - **Fallbacks**: Implements demo data for a seamless initial experience without a DB connection.
+
+## 📄 License
+This project is for educational purposes. Feel free to use and modify.
