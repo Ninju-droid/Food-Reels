@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { api } from '../lib/api';
 
-const SESSION_KEY = 'zomoreels-session';
+const SESSION_KEY = 'food-reels-session';
 
 export function useAuth() {
   const [session, setSession] = useState(() => {

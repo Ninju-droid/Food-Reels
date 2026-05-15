@@ -16,7 +16,7 @@ const Sidebar = () => {
           <Video size={22} color="white" />
         </div>
         <div>
-          <h2 className="text-xl font-extrabold tracking-tight text-white">ZomoReels</h2>
+          <h2 className="text-xl font-extrabold tracking-tight text-white">Food Reels</h2>
           <p className="text-[10px] uppercase tracking-widest text-[#8e8e93] font-bold">Premium Discovery</p>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div className="brand">
         <span className="brand-mark"><Video size={22} /></span>
         <div>
-          <strong>ZomoReels</strong>
+          <strong>Food Reels</strong>
           <small>Verified food discovery</small>
         </div>
       </div>

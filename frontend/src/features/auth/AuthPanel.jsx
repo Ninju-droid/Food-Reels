@@ -97,7 +97,7 @@ const AuthPanel = ({ mode, authView, setAuthView, onSubmit, loading, error }) =>
           </Button>
 
           <p className="text-[10px] text-center text-[#48484a] mt-4 uppercase tracking-widest font-bold">
-            Secured by ZomoCloud™
+            Secured by Food Reels Cloud™
           </p>
         </form>
       </Card>
